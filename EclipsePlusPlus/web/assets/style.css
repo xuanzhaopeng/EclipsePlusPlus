@@ -8,11 +8,7 @@ and open the template in the editor.
     Author     : Chris
 */
 
-body {
-	background:white;
-	font-family:Segoe,"Segoe UI",Calibri,Arial,Sans-Serif;
-	padding:50px;
-}
+
 
 /* Framework start from here */
 ul.tree,
@@ -43,7 +39,6 @@ ul.tree li {
   padding:0 12px; /* indentation + 2 */
   font-size:14px;
   line-height:20px; /* default list item `line-height` */
-  color:#369;
   font-weight:bold;
   position:relative;
 }
