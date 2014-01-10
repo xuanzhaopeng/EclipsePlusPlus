@@ -24,7 +24,6 @@
             var clear = ""; //清空背景颜色用的变量
 
             function go() {
-                alert(1);
                 createXMLHttpRequest(); //创建XMLHttpRequest
                 checkDiv(); //检查processBar所在div
                 var url = "ProgressBarServlet?task=first"; //提示：需要其他参数，可以再此处添加
@@ -139,9 +138,9 @@
                             <tr>
                                 <td align="center">
                                     <div id="progressBar" style="padding:2px;border:solid green 1px;visibility:hidden" mce_style="padding:2px;border:solid green 1px;visibility:hidden" align="left">
-                                        <div style="width:800px">
+                                        <div style="width:450px">
                                             <c:forEach begin="1" end="50" step="1" >
-                                                <span id="block<%=i++%>" style="width:2%;"></span>
+                                                <span id="block<%=i++%>" style="width:12px;"></span>
                                             </c:forEach>
                                         </div>
                                     </div>

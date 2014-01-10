@@ -27,8 +27,8 @@ public class ProgressBarServlet extends HttpServlet {
             HttpServletResponse response) throws ServletException, IOException {
         String task = request.getParameter("task");
         String res = "";
+        out = response.getWriter();
         if (task.equals("first")) {
-            out = response.getWriter();
             res = "1";
 
             //此处可以对非第1次的异步访问公共的内容，做一些初始化工作  
