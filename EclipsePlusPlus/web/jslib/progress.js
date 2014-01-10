@@ -45,7 +45,7 @@ function goCallback() {
 
 function pollServer() {
     createXMLHttpRequest();
-    var url = "progressBarServlet?task=poll";
+    var url = "ProgressBarServlet?task=poll";
     xmlHttp.open("GET", url, true);
     xmlHttp.onreadystatechange = pollCallback; //设置回调函数
     xmlHttp.send(null);

@@ -7,7 +7,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <!-- 自定义标签的引入 -->
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c"%>
 <html>
 	<head>
 		<title>进度条</title>
@@ -16,7 +16,7 @@
 		<meta http-equiv="expires" content="0">
 		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 		<!-- js文件和代码 -->
-		<mce:script type="text/javascript" src="web/jslib/progress.js" mce_src="web/jslib/progress.js"></mce:script>
+		<mce:script type="text/javascript" src="jslib/progress.js" mce_src="jslib/progress.js"></mce:script>
 	</head>
 	<body id="go" onload="go();" style="top:200px;hight:800px">
 		<div style="top:145px;width:600px; z-index: 100;border: none;">
