@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app 
-    xmlns="http://java.sun.com/xml/ns/javaee" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
-    version="3.0">
-    
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <servlet>
-        <servlet-name>EclipseServlet</servlet-name>
-        <servlet-class>fr.ece.eclipse.EclipseServlet</servlet-class>
+        <servlet-name>ConfigBuildServlet</servlet-name>
+        <servlet-class>fr.ece.epp.build.view.ConfigBuildServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>ProgressBarServlet</servlet-name>
-        <servlet-class>fr.ece.eclipse.ProgressBarServlet</servlet-class>
+        <servlet-name>InfoBuildServlet</servlet-name>
+        <servlet-class>fr.ece.epp.build.view.InfoBuildServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DownloadBuildServlet</servlet-name>
+        <servlet-class>fr.ece.epp.build.view.DownloadBuildServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>EclipseServlet</servlet-name>
-        <url-pattern>/EclipseServlet</url-pattern>
+        <servlet-name>ConfigBuildServlet</servlet-name>
+        <url-pattern>/ConfigBuildServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>ProgressBarServlet</servlet-name>
-        <url-pattern>/ProgressBarServlet</url-pattern>
+        <servlet-name>InfoBuildServlet</servlet-name>
+        <url-pattern>/InfoBuildServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DownloadBuildServlet</servlet-name>
+        <url-pattern>/DownloadBuildServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
